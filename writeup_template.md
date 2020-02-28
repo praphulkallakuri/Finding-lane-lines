@@ -3,11 +3,8 @@
 
 ### Reflection
 
-### 1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
+### 1. Pipeline
 
-My pipeline consisted of 5 steps. First, I converted the images to grayscale, then I .... 
-
-In order to draw a single line on the left and right lanes, I modified the draw_lines() function by ...
 
 1. Convert the image to grayscale and apply gaussian smoothing to the image
 2. Use Canny edge detector and mark the region of interest
@@ -18,10 +15,10 @@ In order to draw a single line on the left and right lanes, I modified the draw_
 7. Draw lines on the image
 
 
-![alt text][image1]
 
 
-### 2. Identify potential shortcomings and possible improvements
+
+### 2. Potential shortcomings and possible improvements
 
 1. In this pipeline, vertices in ROI were hardcoded and the value for slope condition was selected on a trial and error basis. This is usually unfavorable and there has to be a way to optimize and choose the optimum values real time.
 2. Finding lanes during the night would be a challenge due to color recognition.
